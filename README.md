@@ -9,7 +9,7 @@ fully tracked experiment pipeline.
 The mandatory is ~8 hours. This estimate is for someone familiar
 with Python, the command line, and YAML basics.
 
-**Repository:** [author's GitHub link, to be filled]
+**Repository:** https://github.com/gabrielcoto/reproducible-ml-pipeline/
 **Submission:** Pull Request with code, a completed REPORT.md, and a link
 to a video of up to 4 minutes.
 

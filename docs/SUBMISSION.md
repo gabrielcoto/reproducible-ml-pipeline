@@ -9,7 +9,7 @@ meaningful messages. The PR must contain:
 - completed `REPORT.md`;
 - no video files, no venvs, no `mlruns/` (see `.gitignore`).
 
-## 2. Video (≤ 5 minutes)
+## 2. Video (≤ 4 minutes)
 
 Show the 4 checks from `docs/GRADING.md` in order. Screen recording briefly naming 
 each check is enough; production quality is not graded. 

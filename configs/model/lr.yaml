@@ -1,0 +1,3 @@
+# TODO(3): create + complete this file so `python train.py model=lr` works
+type: lr
+C: ???

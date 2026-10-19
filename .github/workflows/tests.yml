@@ -1,0 +1,29 @@
+name: tests
+
+# Runs the staged test suite on every PR and on pushes to solution/*.
+# GitHub-hosted runners: works out of the box on public repos.
+
+on:
+  pull_request:
+  push:
+    branches:
+      - "solution/**"
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pinned deps
+        run: pip install -r requirements.lock
+      - name: Run full test suite
+        run: python -m pytest tests/ -v --junitxml=report.xml
+      - name: Publish test report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pytest-report
+          path: report.xml

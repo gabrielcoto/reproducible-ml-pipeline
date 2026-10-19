@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+outputs/
+mlruns/
+mlflow.db
+mlflow.db-journal
+model.pkl
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# Teacher's reference solution — never push to main.
+# Publish on a separate `solution` branch instead. See SOLUTION/BRANCHES.md.
+SOLUTION/

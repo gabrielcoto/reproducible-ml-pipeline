@@ -1,0 +1,11 @@
+# Starter needs only sklearn; hydra-core and mlflow are needed to COMPLETE the task.
+# Versions pinned to match the reference values in method-note.md §6.
+# (RandomForestClassifier can produce slightly different trees across
+#  scikit-learn versions even with the same random_state — see method-note.md.)
+#
+# For full reproducibility (transitive deps also pinned), use:
+#   pip install -r requirements.lock
+scikit-learn~=1.5.2
+mlflow>=2.9
+hydra-core>=1.3
+pytest>=8.3

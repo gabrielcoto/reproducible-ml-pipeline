@@ -1,0 +1,4 @@
+# TODO(3): parameters of RandomForestClassifier (mirrors constants in train.py)
+type: rf
+n_estimators: ???
+max_depth: ???
